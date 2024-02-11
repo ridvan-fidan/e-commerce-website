@@ -1,0 +1,79 @@
+{% extends "index.html" %}
+{% load static %}
+
+    {% block content %}
+    {% include "includes/_navbar.html" %}
+    
+     <!--  header start -->
+     <!-- ! header end -->
+  
+
+  
+       <!-- Contact start -->
+        <section id="contact" class="generic">
+         <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-7">
+              <h5 class="text-warning text-center mb-5 mt-3">GET IN TOUCH</h5>
+              <form class="row ">
+                <div class="col-6">
+                  <div class="input-group">
+                  
+                    <input type="text" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent" placeholder="NAME " required>
+                  </div>
+                </div>
+    
+                <div class="col-6">
+                  <div class="input-group">
+                    <input type="email" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent" placeholder="E-MAİL" required>
+                  </div>
+                </div>
+    
+                <div class="col-12 py-3" >
+                  <div class="input-group">
+                    <input type="text" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent" placeholder=" Subject" required>
+                  </div>
+                </div>
+
+                <div class="col-12 ">
+                  <div class="input-group">
+                    <textarea class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent" placeholder="Your Message Here " required rows="7" cols="60"></textarea>
+                  </div>
+               </div>
+               </form>
+        </div>
+
+        <div class="col-md-12 col-lg-4">
+          <h5 class="text-warning text-center mb-5 mt-3">CONTACT INFO</h5>
+          <h6 class="text-secondary">E-Shopper Inc.</h6>
+          <h6 class="text-secondary">935 W.Webster Ave New Streets Chicago, IL</h6>
+          <h6 class="text-secondary">Newyork USA</h6>
+          <h6 class="text-secondary">Mobile:+2346 17 38 93</h6>
+          <h6 class="text-secondary">Fax:1-714-252-0026</h6>
+          <h6 class="text-secondary">Email:info@e-shopper.com</h6>
+          <h5 class="text-warning text-center mb-3 mt-4">SOCIAL NETWORKING</h5>
+          <div class="icon text-center">
+            <a class="px-2" href=""> <i class="fa-brands fa-facebook-f fa-lg" style="color: #bfbfbf"></i></a> 
+            <a class="px-1" href="">   <i class="fa-brands fa-twitter fa-lg" style="color: #bfbfbf"></i></a> 
+            <a class="px-1" href=""></a>  <i class="fa-brands fa-google-plus-g fa-lg" style="color: #bfbfbf"></i></a> 
+            <a class="px-2" href=""> <i class="fa-brands fa-youtube fa-lg" style="color: #bfbfbf"></i></a> 
+            </div>
+          
+        </div>
+
+          </div>
+          <div class="button d-flex justify-content-center mt-3" >
+             <button type="button" class="btn btn-warning d-flex justify-content-center rounded-0">Submit</button>
+          </div>
+
+          
+         </div>
+</section>
+       
+    {% endblock content %}
+
+       <!--! Contact End -->
+
+       
+    
+       

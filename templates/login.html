@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+     <!-- fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+     <!-- ! Boostrap CSS CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+     <!-- External CSS -->
+    <link rel="stylesheet" href=" {% static 'style.css' %}">
+</head>
+<body>
+<!-- header başlangıç -->
+{% include "includes/_navbar.html" %}
+<!--! header bitiş -->
+
+     <!--LOGİN START  -->
+
+     <!-- form -->
+     <form action="" method="POST" class="mt-5 mb-5">
+     {% csrf_token %}
+
+
+    <section id="contact" class="generic">
+
+        <div class="container px-5">
+      
+         <div class="row mx-5">
+            <div class="col-lg-5">
+                         <div class="col-12">
+                           <h5 class="text-secondary text-center dodo3">Login to your account</h5>
+                              <form method = "POST" class="row ">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                        
+                                        <input type="text" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent dodo2" name= "username" placeholder="name " required>
+                                        </div>
+                                    </div>
+   
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                            <input type="password" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent dodo2" name= "password" placeholder="password" required>
+                                            </div>
+                                        </div>
+   
+               
+
+                                    <div class="col-12">
+                                        <input type="checkbox" name="vehicle1" value="signed">
+                                        <label for="vehicle1"> Keep me signed in</label><br>
+                                    </div>
+                                    <div class="col-12 dodo2" > <button type="submit" style="margin: 35px 0 0 0;" class="btn btn-warning d-flex justify-content-center rounded-0">Login</button></div>
+                             </form>
+                    </div>
+                </div>
+                <div class="col-2" style="margin:auto"><button type="button" class="dodo4" style="margin: 0 0 0 35px;">OR</button></div>
+                <div class="col-lg-5">
+                    <h5 class="text-secondary text-center dodo3">New User Singup!</h5>
+                    <form method = "POST" class="row ">
+                                <div class="col-12">
+                                    <div class="input-group">
+                                    
+                                    <input type="text" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent dodo2" name= "username" placeholder="NAME " required>
+                                    </div>
+                                </div>
+
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                        <input type="email" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent dodo2" placeholder="Email Address" required>
+                                        </div>
+                                    </div>
+
+           
+
+                                <div class="col-12">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                        <input type="password" class="form-control rounded-0 border-secondary-subtle text-secondary bg-transparent dodo2" name="Password" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 dodo2" >
+                                     <button type="submit" class="btn btn-warning d-flex justify-content-center rounded-0">Singup</button>
+                                    </div>
+                         </form>
+                        </div>
+       </div>
+         </div>
+        </div>
+</section>
+</form>
+
+ <!-- !LOGİN END  -->
+
+         <!--  Part Footer  -->
+     <footer class="bg-bej text-secondary pt-5 pb-5 mt-4">
+      <div class="container text-center text-nd-left">
+
+        <div class="row text-center text-md-left">
+          <div class="col  mt-1">
+            <span class="text-warning fs-2 fw-medium">E</span><span class="text-secondary fs-2 fw-medium">-SHOPPER</span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, amet..</p>
+          </div>
+
+          <div class="col  mt-1">
+             <img src=" {% static 'img/littlewomer1.jpg' %}" alt="" style="width: 180px; height: 80px;">
+             <h5 class="mt-3">Circle of Hands</h5>
+             <p class="text-secondary">24 DEC 2014</p>
+          </div>
+
+          <div class="col  mt-1">
+             <img src=" {% static 'img/littlewomer1.jpg' %}" alt="" style="width: 180px; height: 80px;">
+             <h5 class="mt-3">Circle of Hands</h5>
+             <p class="text-secondary">24 DEC 2014</p>
+          </div>
+
+          <div class="col  mt-1">
+             <img src=" {% static 'img/littlewomer1.jpg' %}" alt="" style="width: 180px; height: 80px;">
+             <h5 class="mt-3">Circle of Hands</h5>
+             <p class="text-secondary">24 DEC 2014</p>
+          </div>
+
+          <div class="col  mt-1">
+             <img src=" {% static 'img/littlewomer1.jpg' %}" alt="" style="width: 180px; height: 80px;">
+             <h5 class="mt-3">Circle of Hands</h5>
+             <p class="text-secondary">24 DEC 2014</p>
+          </div>
+
+          <div class="col  mt-1">
+             <img src=" {% static 'img/map.png' %}" alt="" style="width: 250px; height: 200px;"> 
+          </div>
+         </div>
+         <hr>
+
+        <!-- --------------------------------------------------- -->
+        <div class="row text-center text-md-left">
+          <div class="col  mt-1">
+              <h5 class="text-uppercase mb-4 fw-bold text-warning">SERVİCE</h5>
+              <P>Online Helps</P>
+              <P>Contact Us</P>
+              <P>Order Satus</P>
+              <P>Change Location</P>
+              <P>FAQ's</P>
+          </div>
+          <div class="col  mt-1">
+              <h5 class="text-uppercase mb-4 fw-bold text-warning">QUOCK SHOP</h5>
+              <P>T-Shirt</P>
+              <P>Mens</P>
+              <P>Womens</P>
+              <P>Gift Cards</P>
+              <P>Shoes</P>
+          </div>
+          <div class="col  mt-1">
+              <h5 class="text-uppercase mb-4 fw-bold text-warning">POLICIES</h5>
+              <P>Terms of Us</P>
+              <P>Privecy Policy </P>
+              <P>Refund Policy</P>
+              <P>Billing Policy</P>
+              <P>Ticket System</P>
+          </div>
+          <div class="col  mt-1">
+              <h5 class="text-uppercase mb-4 fw-bold text-warning">ABOUT SHOPPER</h5>
+              <P>Company Information</P>
+              <P>Careers</P>
+              <P>Store Location</P>
+              <P>Change Location</P>
+              <P>Copyright</P>
+          </div>
+          <div class="col  mt-1">
+              <h5 class="text-uppercase mb-4 fw-bold text-warning">ABOUT SHOPPER</h5>
+              <form class="d-flex" role="search">
+                <input class="form-control me-0 rounded-0" type="email" placeholder="Your email address" aria-label="Search">
+                <button class="btn bg-warning px-3 rounded-0" type="submit"><i class="fa-regular fa-circle-right" style="color: #f9fafa;"></i></button>
+              </form>
+              <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</P>
+              
+          </div>
+        </div>
+      </div>
+    
+       
+      </div>
+    </footer>
+    <footer>
+      <div class="continer-fluid  bg bg-secondary lead text-opacity-100 ps-5 text-white-50 d-flex justify-content-between">
+        <div class="div">Copyright  &copy; 2023 E-SHOPPER Inc. All right reserved</div>
+        <div class="d-flex justify-content-between">
+        <div class="div me-2">Designed by <a class="text-warning" href="">Thememeum</a> </div>
+        <div class="rido3 justify-content-end me-2 "><i class="fa-solid fa-chevron-up" style="color: #ece4e4;"></i></div>
+      </div>
+    </footer>
+    <!-- ! Part Footer end -->
+
+   <!-- ! Boostrap JS CDN -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

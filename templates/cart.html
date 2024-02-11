@@ -1,0 +1,220 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+{% include "includes/_navbar.html" %}
+
+    <!-- Part Cart Start -->
+     <div class="container cart-page">
+      <table>
+        <tr>
+          <th class="ps-2">İtem</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info d-flex flex-wrap my-3 ">
+              <img style="width: 100px;" height="80px" src="{% static 'img/littlewomer1.jpg' %}" alt="">
+              <div>
+                <p class="ms-4 mt-4">Easy Polo Black Edition</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="price"> 56</span>
+          </td>
+          <td>
+            <div class="ty-display-flex ty-numeric-counter">
+              <button class="bg-bej px-1 border-white" id="azalt"><i class="fa-solid fa-minus" style="color: #86898d;"></i></button>
+              <span class="mx-3 adet ">1</span>
+             
+              <button class="bg-bej px-1 border-white" id="arttir"><i class="fa-solid fa-plus fa-xxs" style="color: #898d94;"></i></button>
+            </div>
+          </td>
+          <td>
+            <span class="text-warning fs-5 total me-4">56</span>
+             <button class="bg-bej px-2 border-white "><i class="fa-solid fa-trash-can " style="color: #898d94;"></i></button>
+          </td>
+        </tr>
+        <!-- part 2 -->
+        <tr>
+          <td>
+            <div class="cart-info d-flex flex-wrap my-3 ">
+              <img style="width: 100px;" height="80px" src="{% static 'img/littlewomer1.jpg' %}" alt="">
+              <div>
+                <p class="ms-4 mt-4">Easy Polo Black Edition</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="price"> 56</span>
+          </td>
+          <td>
+            <div class="ty-display-flex ty-numeric-counter">
+              <button class="bg-bej px-1 border-white" id="azalt"><i class="fa-solid fa-minus" style="color: #86898d;"></i></button>
+              <span class="mx-3 adet ">1</span>
+             
+              <button class="bg-bej px-1 border-white" id="arttir"><i class="fa-solid fa-plus fa-xxs" style="color: #898d94;"></i></button>
+            </div>
+          </td>
+          <td>
+            <span class="text-warning fs-5 total me-4">56</span>
+             <button class="bg-bej px-2 border-white "><i class="fa-solid fa-trash-can " style="color: #898d94;"></i></button>
+          </td>
+        </tr>
+        <!-- part 3 -->
+        <tr>
+          <td>
+            <div class="cart-info d-flex flex-wrap my-3 ">
+              <img style="width: 100px;" height="80px" src="{% static 'img/littlewomer1.jpg' %}" alt="">
+              <div>
+                <p class="ms-4 mt-4">Easy Polo Black Edition</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <span class="price"> 56</span>
+          </td>
+          <td>
+            <div class="ty-display-flex ty-numeric-counter">
+              <button class="bg-bej px-1 border-white " id="azalt"><i class="fa-solid fa-minus" style="color: #86898d;"></i></button>
+              <span class="mx-3 adet ">1</span>
+             
+              <button class="bg-bej px-1 border-white  " id="arttir"><i class="fa-solid fa-plus fa-xxs" style="color: #898d94;"></i></button>
+            </div>
+          </td>
+          <td>
+            <span class="text-warning fs-5 total me-4">56</span>
+             <button class="bg-bej px-2 border-white "><i class="fa-solid fa-trash-can " style="color: #898d94;"></i></button>
+          </td>
+        </tr>
+        
+      </table>
+
+     </div>
+
+     <!--! Part Cart End -->
+     <div class="container">
+     <h5 >What would you like to do next?</h5>
+     <p>Choose if you have a discount code or reward you want to would like to estimate your delivery cost.</p>
+    </div>
+
+
+
+      <div class="row mx-5 px-5">
+        
+        <div class="col-6" style="border: 1px solid #686a6e;">
+            <div class="col-12 ms-3 mb-2 mt-3">
+          <input type="checkbox" name="vehicle1" value="signed">
+          <label for="vehicle1"> Keep me signed in</label><br>
+        </div>
+
+          <div class="col-12 ms-3 mb-2">
+          <input type="checkbox" name="vehicle1" value="signed">
+          <label for="vehicle1"> Keep me signed in</label><br> 
+        </div> 
+
+        <div class="col-12 ms-3 mb-2">
+          <input type="checkbox" name="vehicle1" value="signed">
+           <label for="vehicle1"> Keep me signed in</label><br>
+          </div>
+
+             <div class="row">
+              <div class="col ms-3 mb-2">
+                <h6>Country:</h6>
+                <select class="custom-select  p-1 ">
+                <option value="3">United States</option>
+                <option value="4">TÜRK LİRASI</option>
+            </select>
+          </div>
+          
+              <div class="col mb-2">
+                <h6>Region / State:</h6>
+                <select class="custom-select p-1 ">
+                <option value="3">Select</option>
+                <option value="4">TÜRK LİRASI</option>
+            </select></div>
+              <div class="col-4 mb-2">
+                <h6>Zip Code:</h6>
+                <div class="input-container">
+                <input type="search" id="myInput" style="width: 180px;" height="50px" name="myInput" class="bg-bej border-0 " >
+              </div>
+              </div>
+ 
+             </div>
+             
+           <div class="col-6 d-flex">
+            <div class="button  my-3 mx-3" >
+              <button type="button" class="btn btn-warning d-flex justify-content-start rounded-0 text-white">Get Quotes</button>
+           </div>
+            <div class="button  my-3 mx-3" >
+              <button type="button" class="btn btn-warning d-flex justify-content-start rounded-0 text-white">Continue</button>
+           </div>
+           </div>
+           
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5 " style="border: 1px solid #686a6e;">
+
+         <div class="row">
+          <div class="div bg-bej mt-4 ms-4 d-flex justify-content-between" style="width: 510px; height: 50px;">
+            <div class="text mt-3">
+              <h6 class="text-secondary ">Cart Sub Total</h6>
+            </div>
+            <div class="number mt-3">
+              <h6 class="text-secondary total1"> 56</h6>
+            </div>
+          </div>
+
+          <div class="div bg-bej mt-2 ms-4 d-flex justify-content-between" style="width: 510px; height: 50px;">
+            <div class="text mt-3">
+              <h6 class="text-secondary ">Eco Tax</h6>
+            </div>
+            <div class="number mt-3">
+              <h6 class="text-secondary "> $2</h6>
+            </div>
+          </div>
+
+          <div class="div bg-bej mt-2 ms-4 d-flex justify-content-between" style="width: 510px; height: 50px;">
+            <div class="text mt-3">
+              <h6 class="text-secondary ">Shipping Cost</h6>
+            </div>
+            <div class="number mt-3">
+              <h6 class="text-secondary ">Free</h6>
+            </div>
+          </div>
+
+          <div class="div bg-bej mt-2  ms-4 d-flex justify-content-between" style="width: 510px; height: 50px;">
+            <div class="text mt-3">
+              <h6 class="text-secondary ">Total</h6>
+            </div>
+            <div class="number mt-3">
+              <h6 class="text-secondary total2 "> 00</h6>
+            </div>
+          </div>
+
+         </div>
+
+
+          <div class="col-6 d-flex">
+            <div class="button  my-3 mx-3" >
+              <button type="button" class="btn btn-warning d-flex justify-content-start rounded-0 text-white">Update</button>
+           </div>
+            <div class="button  my-3 mx-3" >
+              <button type="button" class="btn btn-warning d-flex justify-content-start rounded-0 text-white">Check Out</button>
+           </div>
+           </div>
+        </div>
+        
+      </div>
+  
+     
+   
+
+ 
+
+{% endblock content %}
+     
+    

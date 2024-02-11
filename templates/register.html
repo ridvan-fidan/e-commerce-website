@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+{% include "includes/_navbar.html" %}
+
+<form action="" method="POST" class="w-50 bg-bej m-auto border text-secondary p-3 mt-3">
+<h1 class="text-center text-warning">Kayıt Formu </h1>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Kayıt Ol" class="btn btn btn-outline-warning mt-3">
+</form>
+{% endblock content  %}
